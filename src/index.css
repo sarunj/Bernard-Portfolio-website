@@ -1,0 +1,17 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .content-container {
+        @apply flex flex-col 
+        bg-white
+        text-black
+        mt-20
+        h-screen w-screen 
+        
+    }
+}
