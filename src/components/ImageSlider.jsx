@@ -7,34 +7,34 @@ import {RxDotFilled} from 'react-icons/rx'
 const ImageSlider = () => {
     const images = [
         {
-            url: 'images/sculpture1.jpg',
+            url: 'images/gallery/sculpture1.jpg',
         },
         {
-            url: 'images/sculpture2.jpg',
+            url: 'images/gallery/sculpture2.jpg',
         },
         {
-            url: 'images/sculpture3.jpg',
+            url: 'images/gallery/sculpture3.jpg',
         },
         {
-            url: 'images/sculpture4.jpg',
+            url: 'images/gallery/sculpture4.jpg',
         },
         {
-            url: 'images/sculpture5.jpg',
+            url: 'images/gallery/sculpture5.jpg',
         },
         {
-            url: 'images/sculpture6.jpg',
+            url: 'images/gallery/sculpture6.jpg',
         },
         {
-            url: 'images/sculpture7.jpg',
+            url: 'images/gallery/sculpture7.jpg',
         },
         {
-            url: 'images/sculpture8.jpg',
+            url: 'images/gallery/sculpture8.jpg',
         },
         {
-            url: 'images/sculpture9.jpg',
+            url: 'images/gallery/sculpture9.jpg',
         },
         {
-            url: 'images/sculpture10.jpg',
+            url: 'images/gallery/sculpture10.jpg',
         },
     ]
 

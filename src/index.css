@@ -7,7 +7,8 @@
 
 @layer components {
     .content-container {
-        @apply flex flex-col 
+        @apply flex flex-col
+        items-center 
         bg-white
         text-black
         mt-20
