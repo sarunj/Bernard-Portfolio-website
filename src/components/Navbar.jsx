@@ -1,5 +1,6 @@
 import React from 'react';
 // import {FaBars, FaTimes} from 'react-icons/fa';
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -10,11 +11,21 @@ const Navbar = () => {
           </div>
 
         <ul className='flex'>
-          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>Home</li>
-          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>Sculpture Gallery</li>
-          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>My Work</li>
-          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>About me</li>
-          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>Contact</li>
+          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+            <Link to='/'>Home</Link>
+          </li>
+          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+            <Link to='/sculpture-gallery'>Sculpture Gallery</Link>
+          </li>
+          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+            <Link to='/my-work'>My Work</Link>
+          </li>
+          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+            <Link to='/about-me'>About Me</Link>
+          </li>
+          <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+            <Link to='/contact'>Contact</Link>
+          </li>
         </ul>
         
 
