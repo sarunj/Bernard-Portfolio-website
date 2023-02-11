@@ -5,7 +5,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
         <Navbar />
         <Home />
     </div>

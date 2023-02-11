@@ -12,7 +12,8 @@
         bg-white
         text-black
         mt-20
-        h-screen w-screen 
-        
+        h-screen
+        w-full  
+        px-5
     }
 }
