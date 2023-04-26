@@ -9,7 +9,7 @@ const Contact = () => {
         <h1 className='text-7xl font-nameHeaderFont'>Contact me</h1>
         <p>Reach out if you are interrested in any of my sculptures!</p>
         <div>
-          <a href="https://www.instagram.com/bernardnicolas2/" target="_blank" rel="noopener">
+          <a href="https://www.instagram.com/bernardnicolas2/" target="_blank" rel="noreferrer">
             <FaInstagram className='inline-block m-1 text-2xl cursor-pointer hover:scale-110 duration-200' />
           </a>
           {/* <a href="mailto:bernardnicolasbrillanti@gmail.com"> */}

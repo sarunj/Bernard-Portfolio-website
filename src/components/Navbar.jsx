@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
  
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed bg-black z-10">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white fixed bg-white z-10">
         <div>
-            <h1 className="text-lg md:text-3xl font-nameHeaderFont ml-2">Bernard Nicolas Brillanti</h1>
+            <h1 className="text-lg md:text-3xl font-nameHeaderFont ml-2 text-black">Bernard Nicolas Brillanti</h1>
         </div>
 
       <ul className='hidden md:flex'>
