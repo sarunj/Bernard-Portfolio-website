@@ -1,6 +1,9 @@
 
-import React, { useState } from 'react';
-import Modal from 'react-modal';
+import React, { useState, useEffect } from 'react';
+// import Modal from 'react-modal';
+import ImageModal from '../components/ImageModal';
+
+
 
 const Gallery = () => {
   const images = [
@@ -63,6 +66,11 @@ const Gallery = () => {
     setModalIsOpen(false);
   };
 
+  useEffect(() => {
+    console.log('modalIsOpen:', modalIsOpen);
+    console.log('selectedImage:', selectedImage);
+  }, [modalIsOpen, selectedImage]);
+
   return (
     <div className='content-container'>
       {/* ... */}
@@ -79,9 +87,10 @@ const Gallery = () => {
         ))}
       </div>
 
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
+      <ImageModal
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+        selectedImage={selectedImage}
         contentLabel='Image Modal'
         className='modal-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
         overlayClassName='modal-overlay'
@@ -94,25 +103,10 @@ const Gallery = () => {
         </div>
         
         
-      </Modal>
+      </ImageModal>
     </div>
   );
 
-//   return (
-//     <div className='content-container'>
-//         <h1 className='text-2xl py-5 font-nameHeaderFont bg-slate-300'>Gallery Page</h1>
-
-       
-//         <div className='columns-1 sm:columns-2 md:columns-3 xl:columns-4'> 
-//             {images.map((image, index) => (
-//                 <div className='image-container' key={index}>
-//                     <img className='mb-2 h-200 w-100 hover:shadow-xl hover:scale-95 duration-200' src={image.url} alt='sculpture' />
-//                     <p className='caption'>{image.caption}</p>
-//                 </div>
-//             ))}
-//         </div>
-//     </div>
-//   );
 };
 
 export default Gallery
