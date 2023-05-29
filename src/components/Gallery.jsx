@@ -73,7 +73,7 @@ const Gallery = () => {
 
   return (
     <div className='content-container'>
-      {/* ... */}
+      
       <h1 className="text-2xl py-5 font-nameHeaderFont bg-white text-center">Gallery Page</h1>
       <div className='columns-1 sm:columns-2 md:columns-3 xl:columns-4'>
         {images.map((image, index) => (
@@ -101,8 +101,6 @@ const Gallery = () => {
             </button> 
             {selectedImage && <img src={selectedImage.url} alt='sculpture' className="modal-image object-contain max-h-[80%] max-w-[80%] mx-auto my-auto" />}
         </div>
-        
-        
       </ImageModal>
     </div>
   );
