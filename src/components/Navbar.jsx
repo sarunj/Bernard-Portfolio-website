@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import {FaBars, FaTimes} from 'react-icons/fa';
+import {FaBars, FaTimes, FaInstagram} from 'react-icons/fa';
+// import {HiOutlineMail} from 'react-icons/hi';
 import {Link} from 'react-router-dom';
+
 
 const Navbar = () => {
 
@@ -21,14 +23,19 @@ const Navbar = () => {
         <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
           <Link to='/sculpture-gallery'>Sculpture Gallery</Link>
         </li>
-        <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
+        {/* <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
           <Link to='/my-work'>My Work</Link>
-        </li>
+        </li> */}
         <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
           <Link to='/about-me'>About Me</Link>
         </li>
-        <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
+        {/* <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
           <Link to='/contact'>Contact</Link>
+        </li> */}
+        <li className='px-4 cursor-pointer capitalize font-semibold text-gray-500 hover:scale-110 duration-200'>
+          <a href="https://www.instagram.com/bernardnicolas2/" target="_blank" rel="noreferrer">
+            <FaInstagram className='inline-block text-xl cursor-pointer hover:scale-100 duration-200'/>
+          </a>
         </li>
       </ul>
       
@@ -45,14 +52,21 @@ const Navbar = () => {
               <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
                 <Link to='/sculpture-gallery'>Sculpture Gallery</Link>
               </li>
-              <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+              {/* <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
                 <Link to='/my-work'>My Work</Link>
-              </li>
+              </li> */}
               <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
                 <Link to='/about-me'>About Me</Link>
               </li>
-              <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+              {/* <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
                 <Link to='/contact'>Contact</Link>
+              </li> */}
+              <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
+                <a href="https://www.instagram.com/bernardnicolas2/" target="_blank" rel="noreferrer" className='capitalize font-medium text-gray-500'>
+                <FaInstagram className='inline-block mb-[3px] text-xl cursor-pointer hover:scale-100 duration-200'/>
+                  {' '} Instagram 
+                  
+                </a>
               </li>
             </ul> 
         )}
