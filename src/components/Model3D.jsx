@@ -11,35 +11,11 @@ function Model3D() {
   const modelContainer = useRef();
   const [openWebGLAlert, setOpenWebGLAlert] = React.useState(false);
 
-  //Check if WebGL is available
-  //   useEffect (() => {
-  //     const isWebGLSupported = () => {
-  //       try {
-  //         const canvas = document.createElement('canvas');
-  //         return !!(
-  //           window.WebGLRenderingContext &&
-  //           (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'))
-  //         );
-  //       } catch (e) {
-  //         return false;
-  //       }
-  //     };
-    
-  //   // Usage
-  //   if (isWebGLSupported()) {
-  //     console.log('Hardware acceleration is enabled.');
-  //     setOpenWebGLAlert(false);
-  //   } else {
-  //     console.warn('Hardware acceleration is not enabled.');
-  //     setOpenWebGLAlert(true);
-  //   }
-  // }, []);
-
-
+//use Drei's useDetectGPU hook to check if user's device supports WebGL
+  // const { isWebGL2 } = useDetectGPU();
 
   return (
-    <div ref={modelContainer} className='h-[600px] w-[400px] border-2 border-gray-500 bg-gray-300'>
-        <h1>3D Model</h1>
+    <div ref={modelContainer} className='h-[400px] w-[400px] border-2'>
         {/* https://codesandbox.io/s/qyz5r?file=/src/App.js:431-507 */}
         <Canvas>
           {/* TODO: make react-suspence and loader component */}

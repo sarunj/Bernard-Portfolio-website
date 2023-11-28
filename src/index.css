@@ -9,11 +9,21 @@
     .content-container {
         @apply flex flex-col md:flex-row
         items-center 
-        bg-white
+        bg-transparent
         text-black
         mt-20
-        h-full
+        h-[calc(100vh-80px)]
         w-full  
         px-5
+        overflow-auto
     }
 }
+
+@layer base{
+    body {
+        @apply
+        bg-gradient-to-t from-zinc-700 via-gray-300 to-gray-300
+        h-full
+    }
+}
+

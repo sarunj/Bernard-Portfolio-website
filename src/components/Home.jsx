@@ -5,7 +5,7 @@ import Model3D from './Model3D';
 const Home = () => {
   return (
     <div className='content-container'>
-      <div className='items-center justify-left w-full h-full py-4 pl-5 my-6 bg-gray-100 rounded-lg '>  
+      <div className='items-center justify-left py-4 pl-5 my-6 bg-transparent rounded-lg '>  
         <h1 className='font-mono font-bold text-6xl text-left'>Hello, Im Bernard</h1>
         <h2 className='font-mono font-bold text-2xl text-left'>A French sculptor blending nature and society to provoke thought and invite interaction through my art.</h2>
         
