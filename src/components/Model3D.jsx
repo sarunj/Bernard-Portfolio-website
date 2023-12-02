@@ -2,20 +2,20 @@ import React, {useRef} from 'react'
 import { Canvas } from "@react-three/fiber";
 import { PresentationControls, Stage } from "@react-three/drei";
 import RedHeart from '../models/RedHeart';
-import {Alert, Collapse, IconButton} from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
-import { useEffect } from 'react';
+// import {Alert, Collapse, IconButton} from '@mui/material';
+// import CloseIcon from '@mui/icons-material/Close';
+// import { useEffect } from 'react';
 
 
 function Model3D() {
   const modelContainer = useRef();
-  const [openWebGLAlert, setOpenWebGLAlert] = React.useState(false);
+  // const [openWebGLAlert, setOpenWebGLAlert] = React.useState(false);
 
 //use Drei's useDetectGPU hook to check if user's device supports WebGL
   // const { isWebGL2 } = useDetectGPU();
 
   return (
-    <div ref={modelContainer} className='h-[400px] w-[400px] border-2'>
+    <div ref={modelContainer} className='h-[400px] w-[400px] '>
         {/* https://codesandbox.io/s/qyz5r?file=/src/App.js:431-507 */}
         <Canvas>
           {/* TODO: make react-suspence and loader component */}

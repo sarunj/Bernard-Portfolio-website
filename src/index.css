@@ -6,8 +6,9 @@
 @tailwind utilities;
 
 @layer components {
-    .content-container {
+    .homepage-container {
         @apply flex flex-col md:flex-row
+        justify-center
         items-center 
         bg-transparent
         text-black
@@ -15,7 +16,37 @@
         h-[calc(100vh-80px)]
         w-full  
         px-5
-        overflow-auto
+        overflow-y-auto
+        
+    }
+}
+@layer components {
+    .aboutme-container {
+        @apply flex flex-col md:flex-row
+        justify-center
+        items-center 
+        bg-transparent
+        text-black
+        mt-20
+        h-[calc(100vh-80px)]
+        w-full  
+        px-5
+        overflow-y-auto
+        
+    }
+}
+@layer components {
+    .gallery-container {
+        @apply flex flex-col md:flex-row
+        justify-center
+        items-center 
+        bg-transparent
+        text-black
+        mt-20
+        h-[calc(100vh-80px)]
+        w-full  
+        px-5
+        
     }
 }
 

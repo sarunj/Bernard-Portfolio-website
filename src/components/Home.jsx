@@ -4,12 +4,12 @@ import Model3D from './Model3D';
 
 const Home = () => {
   return (
-    <div className='content-container'>
-      <div className='items-center justify-left py-4 pl-5 my-6 bg-transparent rounded-lg '>  
-        <h1 className='font-mono font-bold text-6xl text-left'>Hello, Im Bernard</h1>
-        <h2 className='font-mono font-bold text-2xl text-left'>A French sculptor blending nature and society to provoke thought and invite interaction through my art.</h2>
+    <div className='homepage-container'>
+      <div className='items-center justify-left py-4 pl-5 my-6 bg-transparent'>  
+        <h1 className='font-mono font-bold md:text-4xl lg:text-6xl text-2xl text-left'>Hello, Im Bernard</h1>
+        <h2 className='font-mono font-bold text-base md:text-2xl text-left'>A French sculptor blending nature and society to provoke thought and invite interaction through my art.</h2>
         
-        <p className='font-mono font-bold text-xl text-left'>I create sculptures and art pieces for private and' public spaces.</p>
+        <p className='font-mono font-bold text-sm md:text-xl text-left'>I create sculptures and art pieces for private and' public spaces.</p>
 
       </div>
 
