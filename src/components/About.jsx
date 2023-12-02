@@ -7,17 +7,14 @@ const About = () => {
         <h1 className='text-3xl font-nameHeaderFont py-2'>About Me</h1>
         <div className="flex flex-row justify-center item-center">
           <p className='text-lg w-3/4 p-3 font-medium text-gray-500'>
-            <img className='md:w-[30%] w-[90%]  md:float-right' src='images\Bernard_profile_crop.jpg' alt='Bernard Nicolas Brillanti'/> 
-            My name is Bernard Nicolas Brillanti. I was born in 1968 in France. 
-            I have a degree in art and literature from the University of Aix en Provence. 
-            I have worked as a framer at Galleriets Rammeverksted AS since 1995. 
-            I have also been an assistant to Tom Sandberg from 2001 to 2010. 
-            I have been a student of Bernard Geoffroy since 2014. 
-            I have been a member of Norske Grafikere since 2015. 
-            I have been a member of the Norwegian Sculptors Association since 2017. 
-            I have been a member of the Norwegian Association of Fine Artists since 2018. 
-            I have been a member of the Norwegian Association of Visual Artists since 2019. 
-            I have been a member of the Norwegian Association of Artists since 2020.
+            <img className='w-[90%] md:w-[30%] p-2 xl:w-[20%] md:float-right' src='images\Bernard_profile_crop.jpg' alt='Bernard Nicolas Brillanti'/> 
+            I'm Bernard Nicolas Brillanti, born in 1968 in France. Armed with a degree in art and literature from the University of Aix en Provence, 
+            I've been framing art at Galleriets Rammeverksted AS since 1995. From 2001 to 2010, I worked as an assistant for Tom Sandberg, gaining valuable experience. 
+            Since 2014, I've been a student of Bernard Geoffroy, shaping my artistic perspective. 
+            I'm a member of Norske Grafikere (2015), Norwegian Sculptors Association (2017), Norwegian Association of Fine Artists (2018), 
+            Norwegian Association of Visual Artists (2019), and the Norwegian Association of Artists (2020).
+            My portfolio reflects a lifelong commitment to the arts, marked by continuous growth and a passion 
+            for pushing creative boundaries. Explore my journey in art with me.
           </p>
         </div>
       </div>
