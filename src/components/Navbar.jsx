@@ -49,11 +49,7 @@ const Navbar = ({ isTransparent }) => {
 
       {isNavOpen && (
         <ul
-          className={`flex flex-col justify-center gap-y-10 items-center ${
-            isTransparent
-              ? 'bg-gradient-to-b from-black to-gray-900 bg-black'
-              : 'bg-white'
-          } w-full h-screen fixed top-0 left-0 z-10`}
+          className={`flex flex-col justify-center gap-y-10 items-center bg-gradient-to-b from-black to-gray-900 bg-black w-full h-screen fixed top-0 left-0 z-10`}
         >
           <li className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-110 duration-200'>
               <Link to='/'>Home</Link>
