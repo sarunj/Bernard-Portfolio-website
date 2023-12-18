@@ -72,9 +72,9 @@ const Gallery = () => {
   }, [modalIsOpen, selectedImage]);
 
   return (
-    <div className='content-container'>
+    <div className='gallery-container'>
       
-      <h1 className="text-2xl py-5 font-nameHeaderFont bg-white text-center">Gallery Page</h1>
+      {/* <h1 className="text-2xl py-5 font-nameHeaderFont bg-white text-center">Gallery Page</h1> */}
       <div className='columns-1 sm:columns-2 md:columns-3 xl:columns-4'>
         {images.map((image, index) => (
           <img

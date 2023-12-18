@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 const ContactPage = () => {
   return (
     <div className="flex flex-col">
-        <Navbar />
+        <Navbar isTransparent={true} />
         <Contact />
 
     </div>

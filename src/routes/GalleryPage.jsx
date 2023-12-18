@@ -4,9 +4,11 @@ import Navbar from '../components/Navbar'
 
 const GalleryPage = () => {
   return (
-    <div className="flex flex-col w-full">
-        <Navbar />
-        <Gallery />
+    <div className="flex flex-col h-screen">
+          <Navbar isTransparent={false} />
+        <div className="flex-1 overflow-y-auto">
+          <Gallery /> 
+        </div>
     </div>
   )
 }
