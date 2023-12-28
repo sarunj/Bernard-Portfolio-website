@@ -15,17 +15,19 @@ function Model3D() {
   // const { isWebGL2 } = useDetectGPU();
 
   return (
-    <div ref={modelContainer} className='h-[400px] w-[400px] '>
+    <div ref={modelContainer} className='h-[500px] w-[400px] md:h-[800px] md:w-[400px]'>
         {/* https://codesandbox.io/s/qyz5r?file=/src/App.js:431-507 */}
-        <Canvas>
+        <Canvas className='touch-none' >
           {/* TODO: make react-suspence and loader component */}
+          <ambientLight intensity={0.01} />
+          <spotLight intensity={0.1} />
           <PresentationControls
               // config={{ mass: 100, tension: 500 }}
               snap={{ mass: 4, tension: 100 }}
               rotation={[0, 0, 0]}
               speed={1.5}
               global={true}
-              zoom={1.5}
+              zoom={1}
               polar={[-0.3, Math.PI / 4]}
             >
               <Stage environment={null}>
